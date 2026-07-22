@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PT CustomWorks Engraving</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: radial-gradient(circle at top, #111, #000);
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 80px 20px;
+    animation: fadeIn 1.5s ease-in;
+}
+
+header img {
+    max-width: 320px;
+    filter: drop-shadow(0 0 15px white);
+}
+
+h1 {
+    font-size: 3em;
+    letter-spacing: 2px;
+}
+
+.glow {
+    color: white;
+    text-shadow: 0 0 10px white, 0 0 20px #aaa;
+}
+
+section {
+    padding: 70px 20px;
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 12px;
+    transition: 0.4s;
+    box-shadow: 0 0 10px #000;
+}
+
+.gallery img:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 25px white;
+}
+
+.button {
+    display: inline-block;
+    padding: 14px 30px;
+    margin: 10px;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.button:hover {
+    background: white;
+    color: black;
+    box-shadow: 0 0 15px white;
+}
+
+.card {
+    background: #111;
+    padding: 25px;
+    margin: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 250px;
+    box-shadow: 0 0 10px #000;
+}
+
+.card:hover {
+    box-shadow: 0 0 20px white;
+}
+
+form {
+    max-width: 500px;
+    margin: auto;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 12px 25px;
+    background: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+footer {
+    padding: 30px;
+    background: #111;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(30px);}
+    to {opacity: 1;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <img src="Brand.png">
+    <h1 class="glow">PT CustomWorks</h1>
+    <p>Precision Laser Engraving • Princeton, Texas</p>
+    <a href="#order" class="button">Order Now</a>
+    <a href="#gallery" class="button">View Work</a>
+</header>
+
+<section>
+    <h2>About Us</h2>
+    <p>
+        A father-and-son engraving business owned by Pete and Thomas O’Connor.
+        We specialize in precision laser engraving on wood, coins, and custom materials.
+    </p>
+</section>
+
+<section id="gallery">
+    <h2>Our Work</h2>
+    <div class="gallery">
+        <img src="Pic 1.png">
+        <img src="Pic 2.png">
+        <img src="pic 3.png">
+    </div>
+</section>
+
+<section>
+    <h2>Pricing</h2>
+    <div class="card">
+        <h3>Basic Engraving</h3>
+        <p>$20 - $40</p>
+    </div>
+    <div class="card">
+        <h3>Detailed Work</h3>
+        <p>$40 - $80</p>
+    </div>
+    <div class="card">
+        <h3>Custom Projects</h3>
+        <p>Quote Required</p>
+    </div>
+</section>
+
+<section id="order">
+    <h2>Request a Custom Order</h2>
+    <form action="https://formsubmit.co/ptcustomwork@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+
+        <select name="service">
+            <option>Wood Engraving</option>
+            <option>Coins</option>
+            <option>Custom Request</option>
+        </select>
+
+        <textarea name="details" placeholder="Describe your custom order..." required></textarea>
+
+        <button type="submit">Submit Request</button>
+    </form>
+</section>
+
+<section>
+    <h2>Contact</h2>
+    <p>Email: ptcustomwork@gmail.com</p>
+    <p>Instagram: @ptcustom.work</p>
+</section>
+
+<footer>
+    <p>© 2026 PT CustomWorks Engraving</p>
+</footer>
+
+</body>
+</html>
